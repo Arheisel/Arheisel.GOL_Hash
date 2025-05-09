@@ -154,7 +154,7 @@ int main(int argc, char* argv[]){
 
 	//std::string input;
 	char * filled_str = (char*)malloc(sizeof(char) * str_lenght); //the input string already filled with 32 chars
-	bool * lifeboard = (bool*)malloc(sizeof(char) * 2 * grid_size * grid_size); //the board, consisting of 2 16x16 matrix that are swapped at every "pass"
+	bool * lifeboard = (bool*)malloc(sizeof(bool) * 2 * grid_size * grid_size); //the board, consisting of 2 16x16 matrix that are swapped at every "pass"
 	int current_board = 0; //the matrix that holds the newest values
 	char * output = (char*)malloc(sizeof(char) * str_lenght); //the output string
 
